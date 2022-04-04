@@ -72,6 +72,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Subtract"/>
+                                <connections>
+                                    <action selector="whenSubtractButtonPressedWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gqd-UM-ZM2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gof-0y-xud">
                                 <rect key="frame" x="307" y="344" width="65" height="31"/>
