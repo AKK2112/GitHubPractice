@@ -19,10 +19,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func whenAddButtonPressed(_sender: UIButton){
-    let data1 = "\(firstNumberTextField.text)"
-       let data2 =  "\(secondNumberTextField.text)" 
-       answerLabel.text = "\(data1)" + "\(data2)"
+        let data1 = firstNumberTextField.text!
+        let data2 = secondNumberTextField.text!
+        operationLabel.text = "+"
+        let number1 = Int(data1)!
+        let number2 = Int(data2)!
+        let answerAdd = number1 + number2
+        answerLabel.text = "\(answerAdd)"
     }
 
+    @IBAction func whenMultiplyButtonPressed(_sender: UIButton) {
+        let data1 = firstNumberTextField.text!
+        let data2 = secondNumberTextField.text!
+        operationLabel.text = "x"
+        let number1 = Int(data1)!
+        let number2 = Int(data2)!
+        let answerMultiply = number1 * number2
+        answerLabel.text = "\(answerMultiply)"
+    }
+    
 }
 
