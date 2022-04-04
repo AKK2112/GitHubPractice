@@ -36,9 +36,6 @@ class ViewController: UIViewController {
         operationLabel.text = "-"
        let total = dataNew - dataNew2
         answerLabel.text = "\(total)"
-
-
-         
     }
 
     @IBAction func whenMultiplyButtonPressed(_sender: UIButton) {
@@ -49,6 +46,16 @@ class ViewController: UIViewController {
         let number2 = Int(data2)!
         let answerMultiply = number1 * number2
         answerLabel.text = "\(answerMultiply)"
+    }
+    
+    @IBAction func whenDivideButtonPressed(_sender: UIButton) {
+        let data1 = "\(firstNumberTextField.text!)"
+        let data2 = "\(secondNumberTextField.text!)"
+        let dataNew = Int(data1)!
+        let dataNew2 = Int(data2)!
+        operationLabel.text = "/"
+       let total = dataNew / dataNew2
+        answerLabel.text = "\(total)"
     }
     
 }
