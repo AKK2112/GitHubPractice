@@ -19,9 +19,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func whenAddButtonPressed(_sender: UIButton){
-        firstNumberTextField.text = 
-        secondNumberTextField.text =
-        answerLabel.text = firstNumberTextField + secondNumberTextField
+    let data1 = "\(firstNumberTextField.text)"
+       let data2 =  "\(secondNumberTextField.text)" 
+       answerLabel.text = "\(data1)" + "\(data2)"
     }
 
 }
