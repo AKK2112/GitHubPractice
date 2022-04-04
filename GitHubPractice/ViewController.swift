@@ -19,9 +19,23 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     @IBAction func whenAddButtonPressed(_sender: UIButton){
-    let data1 = "\(firstNumberTextField.text)"
-       let data2 =  "\(secondNumberTextField.text)" 
+        let data1 = "\(firstNumberTextField.text)"
+        let data2 = "\(secondNumberTextField.text)"
+        operationLabel.text = "+"
        answerLabel.text = "\(data1)" + "\(data2)"
+    }
+    
+    @IBAction func whenSubtractButtonPressed(_sender: UIButton) {
+        let data1 = "\(firstNumberTextField.text!)"
+        let data2 = "\(secondNumberTextField.text!)"
+        let dataNew = Int(data1)!
+        let dataNew2 = Int(data2)!
+        operationLabel.text = "-"
+       let total = dataNew - dataNew2
+        answerLabel.text = "\(total)"
+
+
+         
     }
 
 }
