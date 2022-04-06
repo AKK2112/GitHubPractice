@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
     }
+    
     @IBAction func whenAddButtonPressed(_sender: UIButton){
         let data1 = firstNumberTextField.text!
         let data2 = secondNumberTextField.text!
